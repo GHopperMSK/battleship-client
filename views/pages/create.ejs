@@ -109,6 +109,7 @@
     <script language="javascript">
         function setElementsState(state) {
             ['cols', 'rows', 'carrier', 'battleship', 'destroyer', 'patrol-boat'].forEach((id) => {
+                document.getElementById(id).value = Math.floor(document.getElementById(id).value)
                 document.getElementById(id).disabled = state
             })
         }
